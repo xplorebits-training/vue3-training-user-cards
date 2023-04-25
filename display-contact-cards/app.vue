@@ -1,7 +1,7 @@
 <template>
-  <body>
-    <h1 class="text-2xl w-screen h-35 flex bg-black text-white justify-center"><b>USER CONTACT CARD</b></h1>
-    <div v-for="user in userFunction" :key="user.user_id" class="font-medium p-5 flex-wrap bg-gray-400 w-screen border-solid border-black border-4">
+    <div class="h-screen w-auto bg-black">
+      <div class="text-2xl w-auto h-[40px] flex bg-black text-white justify-center items-center"><h1>USER CONTACT CARD</h1></div>
+      <div v-for="user in userFunction" :key="user.user_id" class="font-medium p-5 flex-wrap bg-gray-400 w-screen border-solid border-black border-4">
       <div>ID : {{ user.user_id }} </div>
       <div>Name : {{ user.name }}</div>
       <div>Email : {{ user.email }}</div>
@@ -14,7 +14,7 @@
          <div class="pb-2"> <em>Favourite Category: {{ pref.favorite_category }}</em> </div>
         </div>
       </div>
-  </body>
+    </div>
 </template>
 
 <script setup>
@@ -69,5 +69,4 @@
     }
   })
 })
-
 </script>
